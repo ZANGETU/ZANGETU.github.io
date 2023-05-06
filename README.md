@@ -1,5 +1,5 @@
 # ZANGETU.github.io
 
-DiscordBotの紹介サイト
+DiscordBot Introduction Site
 
-無断複製を禁止します
+All rights reserved.

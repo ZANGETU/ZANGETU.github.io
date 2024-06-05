@@ -6,7 +6,7 @@ body {
     display: flex;
     flex-direction: column;
     min-height: 100vh;
-    overflow-x: hidden;  /* 横スクロールバーを防ぐ */
+    overflow-x: hidden;
 }
 
 nav {
@@ -44,8 +44,8 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-    background-color: #444;  /* 背景色を薄く変更 */
-    transform: translateY(2px);  /* 押している感じ */
+    background-color: #444;
+    transform: translateY(2px);  
 }
 
 header {
@@ -63,7 +63,7 @@ header {
     border-radius: 10px;
     transition: transform 0.3s ease;
     display: block;
-    margin: 0 auto;  /* 中央寄せにする */
+    margin: 0 auto;
 }
 
 .header-image:hover {
@@ -88,8 +88,8 @@ button {
     font-size: 1em;
     cursor: pointer;
     transition: background-color 0.3s ease;
-    border-radius: 20px;  /* 角を丸くする */
-    margin-bottom: 40px; /* Learn Moreボタンの下に空間を作成 */
+    border-radius: 20px; 
+    margin-bottom: 40px;
 }
 
 button:hover {
@@ -123,13 +123,13 @@ footer {
     box-sizing: border-box;
 }
 
-/* タイピングアニメーション用のスタイル */
+
 #typing-text {
     display: inline-block;
     border-right: 2px solid #fff;
     white-space: nowrap;
     overflow: hidden;
-    margin-top: 20px; /* テキストと画像の間にスペースを追加 */
+    margin-top: 20px;
     width: fit-content;
 }
 

@@ -1,5 +1,5 @@
 # ZANGETU.github.io
 
-DiscordBot Introduction Site
+Brief self-introduction site
 
 All rights reserved.

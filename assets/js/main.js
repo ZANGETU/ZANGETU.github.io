@@ -7,9 +7,9 @@ document.addEventListener("DOMContentLoaded", function() {
         if (index < text.length) {
             typingTextElement.innerHTML += text.charAt(index);
             index++;
-            setTimeout(type, 100); // 文字を表示する間隔（ミリ秒）
+            setTimeout(type, 100);
         } else {
-            typingTextElement.innerHTML = text; // 最後に文字列を設定
+            typingTextElement.innerHTML = text; 
         }
     }
     type();

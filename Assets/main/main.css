@@ -155,17 +155,14 @@ body {
     transform: scale(1.2);
 }
 
-/* YouTubeのホバーエフェクト */
 .youtube:hover {
     box-shadow: 0 0 25px rgba(255, 0, 0, 0.8);
 }
 
-/* GitHubのホバーエフェクト */
 .github:hover {
     box-shadow: 0 0 25px rgba(100, 100, 100, 0.8);
 }
 
-/* Discordのホバーエフェクト */
 .discord:hover {
     box-shadow: 0 0 25px rgba(88, 101, 242, 0.8);
 }
@@ -183,7 +180,6 @@ body {
     }
 }
 
-/* メニューバー */
 .menu {
     display: flex;
     justify-content: center;
@@ -199,8 +195,6 @@ body {
     transition: color 0.3s ease;
     padding-bottom: 5px;
 }
-
-
 
 .menu-item:hover {
     color: #ffffff;
@@ -222,7 +216,6 @@ body {
     left: 0;
 }
 
-/* 区切り線 */
 .divider {
     width: 100%;
     height: 1px;
@@ -230,15 +223,13 @@ body {
     margin: 15px 0;
 }
 
-/* ナビゲーションメニュー */
 .nav-menu {
     display: flex;
     justify-content: center;
-    gap: 30px; /* メニュー間の間隔を統一 */
-    margin-top: 10px; /* 必要に応じて調整 */
+    gap: 30px;
+    margin-top: 10px;
 }
 
-/* メニューのテキストデザイン */
 .nav-menu a {
     text-decoration: none;
     color: #ffffff;
@@ -247,7 +238,6 @@ body {
     position: relative;
 }
 
-/* ホバー時の下線エフェクト */
 .nav-menu a::after {
     content: "";
     position: absolute;
@@ -264,10 +254,9 @@ body {
     left: 0;
 }
 
-/* ナビゲーションメニュー全体の配置 */
 .menu-container {
     display: flex;
     flex-direction: column;
-    align-items: center; /* 中央揃え */
-    margin-top: 15px; /* 必要なら調整 */
+    align-items: center; 
+    margin-top: 15px;
 }

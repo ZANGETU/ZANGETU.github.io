@@ -1,0 +1,234 @@
+/*GoogleFonts*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(180deg, #0f1729, #1e2d4a);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow-x: hidden;
+}
+
+.background {
+    position: fixed;
+    inset: 0;
+    overflow: hidden;
+    z-index: -1;
+}
+
+.bg-gradient {
+    position: absolute;
+    inset: 0;
+    background: radial-gradient(ellipse at top, #1b2735 0%, transparent 70%),
+                radial-gradient(circle at bottom left, #1e3a5f 0%, transparent 50%);
+    opacity: 0.2;
+}
+
+.bg-pattern {
+    position: absolute;
+    inset: 0;
+    background:
+        radial-gradient(2px 2px at 40px 60px, #ffffff55 0%, transparent 100%),
+        radial-gradient(2px 2px at 20px 50px, #ffffff55 0%, transparent 100%),
+        radial-gradient(3px 3px at 30px 100px, #ffffff55 0%, transparent 100%),
+        radial-gradient(2px 2px at 80px 140px, #ffffff55 0%, transparent 100%),
+        radial-gradient(3px 3px at 200px 250px, #ffffff55 0%, transparent 100%);
+    background-size: 250px 250px;
+    opacity: 0.6;
+}
+
+.content {
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(10px);
+    border-radius: 15px;
+    padding: 20px;
+    width: 90%;
+    max-width: 600px;
+    text-align: center;
+    border: 1px solid rgba(255, 255, 255, 0.25);
+    box-shadow: 0 0 25px rgba(255, 255, 255, 0.15);
+    overflow: hidden;
+}
+
+.title {
+    color: #4facfe;
+    font-size: 24px;
+    font-weight: bold;
+    text-shadow: 0 0 20px rgba(79, 172, 254, 0.5);
+}
+
+.navigation {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin: 20px 0;
+}
+
+.navigation a {
+    position: relative;
+    text-decoration: none;
+    color: #8f8fb7;
+    font-size: 18px;
+    font-weight: 600;
+    transition: color 0.3s ease;
+}
+
+.navigation a::after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    bottom: -5px;
+    width: 0;
+    height: 3px;
+    background: linear-gradient(45deg, #4facfe, #00f2fe);
+    border-radius: 3px;
+    transition: all 0.3s ease;
+    transform: translateX(-50%);
+}
+
+.navigation a.active,
+.navigation a:hover {
+    color: white;
+}
+
+.navigation a:hover::after,
+.navigation a.active::after {
+    width: 100%;
+}
+
+.subtitle {
+    color: #8f8fb7;
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+.project-list {
+    display: grid;
+    gap: 15px;
+}
+
+.project-card {
+    background: rgba(255, 255, 255, 0.08);
+    border-radius: 10px;
+    display: flex;
+    padding: 10px;
+    align-items: center;
+    transition: background 0.3s ease;
+}
+
+.project-card:hover {
+    background: rgba(255, 255, 255, 0.12);
+}
+
+.project-image {
+    width: 100px;
+    height: 80px;
+    object-fit: cover;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.project-info {
+    flex: 1;
+    margin-left: 10px;
+    text-align: left;
+}
+
+.project-title {
+    color: white;
+    font-size: 18px;
+}
+
+.project-description {
+    color: #8f8fb7;
+    font-size: 14px;
+}
+
+.download-button {
+    display: inline-block;
+    padding: 8px 12px;
+    background: linear-gradient(45deg, #4facfe, #00f2fe);
+    color: white;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 14px;
+    box-shadow: 0 0 10px rgba(79, 172, 254, 0.5);
+    transition: opacity 0.3s ease;
+}
+
+.download-button:hover {
+    opacity: 0.8;
+}
+
+.stars-container {
+    position: fixed;
+    inset: 0;
+    overflow: hidden;
+    z-index: -2;
+}
+
+.star {
+    position: absolute;
+    background-color: white;
+    border-radius: 50%;
+    box-shadow: 0 0 5px white;
+    animation: twinkle 2s infinite ease-in-out alternate;
+}
+
+@keyframes twinkle {
+    0% { opacity: 0.4; }
+    100% { opacity: 0.1; }
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-content {
+    max-width: 90%;
+    max-height: 90%;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.5);
+}
+
+.close {
+    position: absolute;
+    top: 15px;
+    right: 25px;
+    color: white;
+    font-size: 30px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.close:hover {
+    color: #ff4f4f;
+}
+
+@media (max-width: 768px) {
+    .content {
+        width: 90%;
+    }
+
+    .project-image {
+        width: 80px;
+        height: 60px;
+    }
+}
+
+.project-description {
+    white-space: pre-line;
+}
